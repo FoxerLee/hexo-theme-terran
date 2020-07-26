@@ -2,16 +2,25 @@
 # html lang
 language: en
 
+# Blog name
+headername: Foxerlee's Journal
+
 # main menu navigation
 menu:
   Home: /
+  Blog: /archives
+  Categories: /
+  Tags: /
+  Friends: /
   About: /about
   Contact: /contact
-  Archives: /archives
+  
+
 
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/hexo-theme-terran.css
+- /css/style.css
 
 # scripts loaded in the end of the body
 scripts:

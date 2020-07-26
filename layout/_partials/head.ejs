@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<title><%=page.title%></title>
+<% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
+  <!-- stylesheets list from _config.yml -->
+  <% theme.stylesheets.forEach(url => { %>
+    <link rel="stylesheet" href="<%=url%>">
+  <% }); %>
+<% } %>
+<!-- Google Roboto Mono Font -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">

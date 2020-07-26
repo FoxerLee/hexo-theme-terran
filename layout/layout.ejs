@@ -12,24 +12,11 @@ pageTitle += ' [ ' + config.title + ' ]';
 <!DOCTYPE html>
 <html lang="<%=config.language%>">
 <head>
-  <meta charset="UTF-8">
-  <title><%=pageTitle%></title>
-  <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
-    <!-- stylesheets list from _config.yml -->
-    <% theme.stylesheets.forEach(url => { %>
-      <link rel="stylesheet" href="<%=url%>">
-    <% }); %>
-  <% } %>
+  <%- partial('_partials/head',{cache: true}) %>
 </head>
 <body>
 
-<div id="menu-outer">
-  <div id="menu-inner">
-    <% Object.keys(theme.menu).forEach(key => { %>
-      <a href="<%=theme.menu[key]%>"><%=key%></a>
-    <% }); %>
-  </div>
-</div>
+  <%- partial('_partials/header',{cache: true}) %>
 
 <div id="content-outer">
   <div id="content-inner">
