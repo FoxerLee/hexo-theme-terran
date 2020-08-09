@@ -1,0 +1,14 @@
+<footer id="footer" class="footer">
+    <div>
+        <span>
+            <%= config.author %> © <% if (theme.start_year && theme.start_year < date(new Date(), "YYYY")) { %>
+                <%- theme.start_year %> - <%}%>
+                <%- date(new Date(), "YYYY") %> 
+        </span>
+    </div>
+    <div>
+        <span>
+            Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & Theme by <a href="https://github.com/FoxerLee/hexo-theme-terran" target="_blank">Terran</a> 
+        </span>
+    </div>
+</footer>

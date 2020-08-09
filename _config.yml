@@ -14,12 +14,18 @@ menu:
   Friends: /
   About: /about
   Contact: /contact
-  
 
+# Author
+author: Foxerlee
+
+# Profile
+profile_title: Foxerlee's Journal
+
+# Website start year
+start_year: 2017
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/hexo-theme-terran.css
 - /css/style.css
 
 # scripts loaded in the end of the body
