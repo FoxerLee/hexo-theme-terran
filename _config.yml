@@ -8,7 +8,7 @@ headername: Foxerlee's Journal
 # main menu navigation
 menu:
   Home: /
-  Blog: /archives
+  Archive: /archives
   Categories: /
   Tags: /
   Friends: /
@@ -20,6 +20,24 @@ author: Foxerlee
 
 # Profile
 profile_title: Foxerlee's Journal
+
+# Links
+## Comment if you don't use this link
+## The display order is the order in _config.yml, you can change it to you want.
+links:
+  # douban: /#
+  # bilibili: /#
+  github: https://github.com/FoxerLee
+  linkedin: https://www.linkedin.com/in/yuan-li-008b3b142/
+  zhihu: https://www.zhihu.com/people/foxerlee/activities
+  facebook: /#
+  twitter: /#
+  weibo: /#
+  reddit: /#
+  stack-overflow: /#
+  gitlab: /#
+  pinterest: /#
+  youtube: /#
 
 # Website start year
 start_year: 2017

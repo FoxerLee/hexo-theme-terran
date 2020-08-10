@@ -2,6 +2,37 @@
     <div class="profile">
         <h1 class="profile-title"><%- theme.profile_title%></h1>
         <h5 id="hitokoto"></h5>
-        <p class="iconfont icon-line-line"></span>
+        <div class="logo-group">
+            <% if (theme.links !== undefined) { %>
+                <% for (var key in theme.links){ %>
+                    <% if (key === "linkedin" || key === "facebook") { %>
+                        <a class="iconfont icon-<%- key %>-box-line" href="<%= theme.links[key] %>"></a>
+                    <% } else { %>
+                        <a class="iconfont icon-<%- key %>-line" href="<%= theme.links[key] %>"></a>
+                    <% } %>
+                <% } %>
+            <% } %>
+        </div>
     </div>
 </div>
+
+
+<!-- 一言API -->
+<!-- 现代写法，推荐 -->
+<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
+<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+<!--End-->
+<script>
+fetch('https://v1.hitokoto.cn?c=d&c=a&c=j')
+    .then(function (res){
+    return res.json();
+    })
+    .then(function (data) {
+    var hitokoto = document.getElementById('hitokoto');
+    hitokoto.innerText = data.hitokoto;
+    })
+    .catch(function (err) {
+    console.error(err);
+    })
+</script>
