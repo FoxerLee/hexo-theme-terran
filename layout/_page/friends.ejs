@@ -1,21 +1,22 @@
 <div class="container">
+    <h1 class="friends-title">Friends</h1>
+        <% if (theme.friends !== undefined) { %>
+            <div class="friends-subtitle">
+                <span class="iconfont icon-friend friends-icon"></span> <%= theme.friends_length %> Friends Total
+            </div>
+        <% } %>
     <div class="friends-band">
-        <div class="item-1">
-            <a href="http://www.zjzsliyang.com/" class="friend-card">
-            <div class="thumb" style="background-image: url(/images/a6.jpg);"></div>
-            <article>
-                <span>zjzsliyang</span>
-            </article>
-            </a>
-        </div>
-    
-        <div class="item-2">
-            <a href="http://www.zjzsliyang.com/" class="friend-card">
-            <div class="thumb" style="background-image: url(/images/a6.jpg);"></div>
-            <article>
-                <span>zjzsliyang</span>
-            </article>
-            </a>
-        </div>
+        <% if (theme.friends !== undefined) { %>
+            <% for (var key in theme.friends){ %>
+                <div class="<%- key %>">
+                    <a href="<%= theme.friends[key].url %>" class="friend-card">
+                    <img class="friend-card-img" src="<%= theme.friends[key].image %>">
+                    <article>
+                        <span><%= theme.friends[key].name %></span>
+                    </article>
+                    </a>
+                </div>
+            <% } %>
+        <% } %>
     </div>
 </div>

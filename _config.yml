@@ -42,6 +42,24 @@ links:
 # Website start year
 start_year: 2017
 
+# Friends
+##
+friends:
+  friend-1:
+    name: Test
+    url: http://www.zjzsliyang.com/
+    image: /images/a6.jpg
+  friend-2:
+    name: Test
+    url: http://www.zjzsliyang.com/
+    image: /images/a6.jpg
+  friend-3:
+    name: Test
+    url: http://www.zjzsliyang.com/
+    image: /images/a6.jpg
+
+friends_length: 3
+
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/style.css

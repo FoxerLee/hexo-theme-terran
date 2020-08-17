@@ -1,7 +1,19 @@
-.friends-band
-    width 80%
-    max-width 1240px
+.friends-title
     margin 70px auto
+    text-align center
+    margin-bottom 10px
+.friends-subtitle
+    font-size 15px
+    text-align center
+    margin-bottom 40px
+    .friends-icon
+        font-size 15px
+
+
+.friends-band
+    width 70%
+    max-width 1240px
+    margin 20px auto
     display grid
     grid-template-columns 1fr
     grid-template-rows auto
@@ -22,12 +34,14 @@
             transform translate(0,-5px)
             transition-delay 0s !important
         article
-            padding 20px
+            padding 0 15px 15px 15px
             text-align center
-        .thumb
-            padding-bottom 80%
-            background-size cover
-            background-position center center
+        .friend-card-img
+            height 80%
+            width: 80%
+            display block
+            margin-left auto
+            margin-right auto
         span
             font-size 12px
             font-weight bold
