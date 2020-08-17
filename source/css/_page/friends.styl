@@ -1,0 +1,47 @@
+.friends-band
+    width 80%
+    max-width 1240px
+    margin 70px auto
+    display grid
+    grid-template-columns 1fr
+    grid-template-rows auto
+    grid-gap 30px
+    .friend-card
+        background white
+        text-decoration none
+        color #444
+        box-shadow 0 2px 5px rgba(0,0,0,0.1)
+        display flex
+        flex-direction column
+        min-height 100%
+        position relative
+        top 0
+        transition all .1s ease-in
+        &:hover
+            box-shadow 0 16px 32px 0 rgba(48, 55, 66, 0.15)
+            transform translate(0,-5px)
+            transition-delay 0s !important
+        article
+            padding 20px
+            text-align center
+        .thumb
+            padding-bottom 80%
+            background-size cover
+            background-position center center
+        span
+            font-size 12px
+            font-weight bold
+            color: #999
+            text-transform uppercase
+            letter-spacing .05em
+            margin 2em 0 0 0
+
+
+@media only screen and (min-width: 500px)
+  .friends-band
+    grid-template-columns 1fr 1fr
+
+
+@media only screen and (min-width: 850px)
+  .friends-band
+    grid-template-columns 1fr 1fr 1fr 1fr
