@@ -1,16 +1,15 @@
-<div class="container archive">
-    <h1 class="archive-title">Archives</h1>
-    <div class="archive-subtitle">
-        <span class="iconfont icon-post archive-icon"></span> <%= site.posts.length %> Posts Total
+<div class="container category archive">
+    <h1 class="category-title">Category&nbsp;-&nbsp;<%=page.category%></h1>
+    <div class="category-subtitle">
+        <span class="iconfont icon-tags category-icon"></span> <%= page.posts.length %> Posts Total
     </div>
-
     <% var cur_date = ''; %>
     <% const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; %>
     <% page.posts.each(function (post) { %>
         <% var post_date =  monthNames[post.date.month()] + ' ' + post.date.year(); %>
 
         <% if(post_date !== cur_date){ %>
-            <h4 class="archive-date"><%- post_date %></h4>
+            <h4 class="archive-date"><%- post_date %></h3>
         <% cur_date = post_date; } %>
 
         <li class="archive-post">

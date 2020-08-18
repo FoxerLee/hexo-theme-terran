@@ -1,9 +1,35 @@
 
-<div id="category">
-  <h1><%=page.category%></h1>
-  
-</div>
-
-<div id="paginator">
-  <%-paginator()%>
-</div>
+<% if (is_category()) { %>
+  <%- partial('_page/category', {pagination: config.category, index: true}) %>
+<% } else { %>
+  <div class="container category">
+      <h1 class="category-title">Categories</h1>
+      <div class="category-subtitle">
+          <span class="iconfont icon-icon-goodscategory category-icon"></span> <%= site.categories.length %> Categories Total
+      </div>
+      <div class="category-categories">
+          <% site.categories.each(function (category) { %>
+              <a href="<%-url_for(category.path)%>">
+                  <h4 class="category-name"><%- category.name %></h4>
+              </a>
+              <% category.posts.map((post, index) => { %>
+                  <% if (index < 4) { %>
+                    <li class="category-post">
+                      <a href="<%-url_for(post.path)%>">
+                          <span class="category-post-name"><%= post.title %></span>
+                          <!-- <span class="category-post-count"><%= category.length %> Posts</span> -->
+                      </a>
+                    </li>
+                  <% } %>
+              <% }) %>
+              <% if (category.posts.length >= 4) { %>
+                    <ul class="pagination" >
+                      <li class="page-item category-more-button">
+                        <a class="page-link" href="<%-url_for(category.path)%>">More</a>
+                      </li>
+                    </ul>
+              <% } %>
+          <% }) %>
+      </div>
+  </div>
+<% } %>
