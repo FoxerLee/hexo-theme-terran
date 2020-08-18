@@ -1,0 +1,24 @@
+<div class="container tag archive">
+    <h1 class="tag-title">Tag&nbsp;-&nbsp;<%=page.tag%></h1>
+    <div class="tag-subtitle">
+        <span class="iconfont icon-tags tag-icon"></span> <%= page.posts.length %> Tags Total
+    </div>
+    <% var cur_date = ''; %>
+    <% const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; %>
+    <% page.posts.each(function (post) { %>
+        <% var post_date =  monthNames[post.date.month()] + ' ' + post.date.year(); %>
+
+        <% if(post_date !== cur_date){ %>
+            <h4 class="archive-date"><%- post_date %></h3>
+        <% cur_date = post_date; } %>
+
+        <li class="archive-post">
+            <a class="archive-post-link" href="<%- url_for(post.path) %>">
+                <span class="archive-post-title"><%= post.title %></span>
+                <span class="archive-post-date"><%- monthNames[post.date.month()] + ' ' + post.date.format('DD') + ', ' + post.date.year() %></span>
+            </a>
+        </li>
+
+    <% }) %>
+    <%- partial('../_partials/paginator') %>
+</div>

@@ -1,9 +1,30 @@
 
-<div id="tag">
-  <h1><%=page.tag%></h1>
-  
-</div>
-
-<div id="paginator">
-  <%-paginator()%>
-</div>
+<% if (is_tag()) { %>
+    <%- partial('_page/tag', {pagination: config.tag, index: true}) %>
+<% } else { %>
+    <div class="container tag">
+        <h1 class="tag-title">Tags</h1>
+        <div class="tag-subtitle">
+            <span class="iconfont icon-tags tag-icon"></span> <%= site.tags.length %> Tags Total
+        </div>
+        <div class="tag-tags">
+          <% site.tags.each(function (tag) { %>
+              <% if (tag.length <= 5) { %>
+                  <a href="<%-url_for(tag.path)%>" class="tag-length-small">
+                      <span class="tag-length-small"><%- tag.name%> [<%-tag.length%>]</span>
+                  </a>
+              <% } %>
+              <% if (tag.length > 5 && tag.length <= 10) { %>
+                  <a href="<%-url_for(tag.path)%>" class="tag-length-medium">
+                      <span class="tag-length-medium"><%- tag.name%> [<%-tag.length%>]</span>
+                  </a>
+              <% } %>
+              <% if (tag.length > 10) { %>
+                  <a href="<%-url_for(tag.path)%>" class="tag-length-large">
+                      <span class="tag-length-large"><%- tag.name%> [<%-tag.length%>]</span>
+                  </a>
+              <% } %>
+          <% }) %>
+        </div>
+    </div>
+<% } %>
