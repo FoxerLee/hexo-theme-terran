@@ -14,7 +14,41 @@
             <% } %>
         </div>
     </div>
+ 
+    <% const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; %>
+    <div class="profile-posts">
+        <% site.posts.map((post, index) => { %>
+            <% if (index < 5) { %>
+                <div class="profile-post">
+                    <h4 class="profile-post-title">
+                        <a href="<%-url_for(post.path)%>"><%= post.title %></a>
+                    </h4>
+                    <p>
+                        <% if ( post.excerpt){ %>
+                            <%- post.excerpt %>
+                        <% } else { %>
+                            <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 250) %>
+                        <% } %>
+                    </p>
+                    <span class="profile-date"><%- monthNames[post.date.month()] + ' ' + post.date.format('DD') + ', ' + post.date.year() %></span>
+                    <a href="<%-url_for(post.path)%>">
+                    <span class="profile-more iconfont icon-post">
+                        
+                    </span>
+                    </a>
+                </div>
+            <% } %>
+        <% }) %>
+        <% if (site.posts.length >= 5) { %>
+            <ul class="pagination" >
+              <li class="page-item profile-more-button">
+                <a class="page-link" href="/archives">More</a>
+              </li>
+            </ul>
+        <% } %>
+    </div>
 </div>
+
 
 
 <!-- 一言API -->

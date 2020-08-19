@@ -1,31 +1,65 @@
 .profile
-    transform translateY(20vh)
+    margin-top 30vh
     text-align center
-    margin-bottom 10px
+    height 70vh
 
-.profile-title
-    margin 25px 0 25px 0
-    text-align center
+    .profile-title
+        margin 25px 0 25px 0
+        text-align center
 
-.profile-hitokoto
-    text-align center
+    .profile-hitokoto
+        text-align center
 
-.iconfont
-    font-size 36px
+    .iconfont
+        font-size 36px
 
-.logo-group
-    text-align center
-    margin-top 30px
+    .logo-group
+        text-align center
+        margin-top 30px
+        a
+            margin 0 5px 0 5px
+            color #17141f
+            &:hover
+                color #9966FF
+                background-color transparent
+                text-decoration none
+                cursor pointer
+                -webkit-transition all .3s
+                -moz-transition all .3s
+                -ms-transition all .3s
+                -o-transition all .3s
+                transition all .3s
+
+
+.profile-posts
     a
-        margin 0 5px 0 5px
         color #17141f
         &:hover
             color #9966FF
             background-color transparent
             text-decoration none
             cursor pointer
-            -webkit-transition all .5s
-            -moz-transition all .5s
-            -ms-transition all .5s
-            -o-transition all .5s
-            transition all .5s
+            -webkit-transition all .3s
+            -moz-transition all .3s
+            -ms-transition all .3s
+            -o-transition all .3s
+            transition all .3s
+    .profile-post
+        margin 60px 100px 60px 100px
+        .profile-post-title
+            margin 20px 0
+        .profile-date
+            font-size 16px
+        .profile-more
+            float right
+            font-size 20px
+    .profile-more-button
+        margin 10px auto 0 auto
+        display block
+        a
+            color #593196
+            &:hover
+                background-color rgb(249, 248, 252)
+                transition none
+        .page-link
+            padding 0.75em 2.25em
