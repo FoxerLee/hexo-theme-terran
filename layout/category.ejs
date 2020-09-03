@@ -25,7 +25,7 @@
               <% if (category.posts.length >= 4) { %>
                     <ul class="pagination" >
                       <li class="page-item category-more-button">
-                        <a class="page-link" href="<%-url_for(category.path)%>">More</a>
+                        <a class="page-link" href="<%-url_for(category.path)%>"><%- __('more') %></a>
                       </li>
                     </ul>
               <% } %>

@@ -1,4 +1,5 @@
 categories: Categories
+category: Category
 home: Home
 archive: Archives
 tags: Tags
@@ -10,3 +11,4 @@ total: Total
 next: Next
 prev: Prev
 total: Total
+more: More

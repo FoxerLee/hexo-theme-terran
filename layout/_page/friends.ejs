@@ -1,8 +1,8 @@
 <div class="container">
-    <h1 class="friends-title">Friends</h1>
+    <h1 class="friends-title"><%- __('friends') %></h1>
         <% if (theme.friends !== undefined) { %>
             <div class="friends-subtitle">
-                <span class="iconfont icon-friend friends-icon"></span> <%= theme.friends_length %> Friends Total
+                <span class="iconfont icon-friend friends-icon"></span> <%= theme.friends_length %> <%- __('friends') %>
             </div>
         <% } %>
     <div class="friends-band">
