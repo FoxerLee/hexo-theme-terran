@@ -1,7 +1,7 @@
 <div class="container tag archive">
-    <h1 class="tag-title">Tag&nbsp;-&nbsp;<%=page.tag%></h1>
+    <h1 class="tag-title"><%- __('tag') %>&nbsp;-&nbsp;<%=page.tag%></h1>
     <div class="tag-subtitle">
-        <span class="iconfont icon-tags tag-icon"></span> <%= page.posts.length %> Tags Total
+        <span class="iconfont icon-tags tag-icon"></span> <%= page.posts.length %> <%- __('posts') %> 
     </div>
     <% var cur_date = ''; %>
     <% const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; %>

@@ -3,9 +3,9 @@
     <%- partial('_page/tag', {pagination: config.tag, index: true}) %>
 <% } else { %>
     <div class="container tag">
-        <h1 class="tag-title">Tags</h1>
+        <h1 class="tag-title"><%- __('tags') %></h1>
         <div class="tag-subtitle">
-            <span class="iconfont icon-tags tag-icon"></span> <%= site.tags.length %> Tags Total
+            <span class="iconfont icon-tags tag-icon"></span> <%= site.tags.length %> <%- __('tags') %>
         </div>
         <div class="tag-tags">
           <% site.tags.each(function (tag) { %>

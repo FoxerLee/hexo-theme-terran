@@ -7,7 +7,7 @@
         <ul class="nav navbar-nav ml-auto">
             <% Object.keys(theme.menu).forEach(key => { %>
                 <li class="nav-item">
-                    <a class="nav-link" style="margin-right: 10px; margin-left:10px;" href="<%=theme.menu[key]%>"><%=key%></a>
+                    <a class="nav-link" style="margin-right: 10px; margin-left:10px;" href="<%=theme.menu[key]%>"><%= __(key.toLowerCase()) %></a>
                 </li>
             <% }); %>
         </ul>

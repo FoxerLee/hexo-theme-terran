@@ -3,9 +3,9 @@
   <%- partial('_page/category', {pagination: config.category, index: true}) %>
 <% } else { %>
   <div class="container category">
-      <h1 class="category-title">Categories</h1>
+      <h1 class="category-title"><%- __('categories') %></h1>
       <div class="category-subtitle">
-          <span class="iconfont icon-icon-goodscategory category-icon"></span> <%= site.categories.length %> Categories Total
+          <span class="iconfont icon-icon-goodscategory category-icon"></span> <%= site.categories.length %> <%- __('categories') %> 
       </div>
       <div class="category-categories">
           <% site.categories.each(function (category) { %>

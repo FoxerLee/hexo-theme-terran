@@ -1,7 +1,7 @@
 <div class="container archive">
-    <h1 class="archive-title">Archives</h1>
+    <h1 class="archive-title"><%= __('archive') %></h1>
     <div class="archive-subtitle">
-        <span class="iconfont icon-post archive-icon"></span> <%= site.posts.length %> Posts Total
+        <span class="iconfont icon-post archive-icon"></span> <%= site.posts.length %> <%= __('posts') %>
     </div>
 
     <% var cur_date = ''; %>
