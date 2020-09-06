@@ -9,21 +9,10 @@
         </div>
         <div class="tag-tags">
           <% site.tags.each(function (tag) { %>
-              <% if (tag.length <= 5) { %>
-                  <a href="<%-url_for(tag.path)%>" class="tag-length-small">
-                      <span class="tag-length-small"><%- tag.name%> [<%-tag.length%>]</span>
-                  </a>
-              <% } %>
-              <% if (tag.length > 5 && tag.length <= 10) { %>
-                  <a href="<%-url_for(tag.path)%>" class="tag-length-medium">
-                      <span class="tag-length-medium"><%- tag.name%> [<%-tag.length%>]</span>
-                  </a>
-              <% } %>
-              <% if (tag.length > 10) { %>
-                  <a href="<%-url_for(tag.path)%>" class="tag-length-large">
-                      <span class="tag-length-large"><%- tag.name%> [<%-tag.length%>]</span>
-                  </a>
-              <% } %>
+            <a href="<%-url_for(tag.path)%>" class="tag-length-small">
+                <span class="iconfont icon-tags tag-icon tag-length-small"></span> <span class="tag-length-small"><%- tag.name%></span>
+            </a>
+
           <% }) %>
         </div>
     </div>
