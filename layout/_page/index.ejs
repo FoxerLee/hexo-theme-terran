@@ -14,8 +14,7 @@
             <% } %>
         </div>
     </div>
- 
-    <% const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; %>
+
     <div class="profile-posts">
         <% site.posts.map((post, index) => { %>
             <% if (index < 5) { %>
@@ -30,7 +29,7 @@
                             <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 250) %>
                         <% } %>
                     </p>
-                    <span class="profile-date"><%- monthNames[post.date.month()] + ' ' + post.date.format('DD') + ', ' + post.date.year() %></span>
+                    <span class="profile-date"><%= date(post.date, theme.date.day) %></span>
                     <a href="<%-url_for(post.path)%>">
                         <span class="profile-more iconfont icon-post"></span>
                     </a>

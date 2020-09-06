@@ -56,8 +56,11 @@ friends:
     name: Test
     url: http://www.zjzsliyang.com/
     image: /images/a6.jpg
-
 friends_length: 3
+
+date:
+  month: MMM, YYYY
+  day: MMM DD, YYYY
 
 # stylesheets loaded in the <head>
 stylesheets:

@@ -1,12 +1,11 @@
 <div class="container tag archive">
-    <h1 class="tag-title"><%- __('tag') %>&nbsp;-&nbsp;<%=page.tag%></h1>
+    <h1 class="tag-title"><span class="iconfont icon-tags tag-icon"></span>&nbsp;<%=page.tag%></h1>
     <div class="tag-subtitle">
-        <span class="iconfont icon-tags tag-icon"></span> <%= page.posts.length %> <%- __('posts') %> 
+       <%= page.posts.length %> <%- __('posts') %> 
     </div>
     <% var cur_date = ''; %>
-    <% const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; %>
     <% page.posts.each(function (post) { %>
-        <% var post_date =  monthNames[post.date.month()] + ' ' + post.date.year(); %>
+        <% var post_date = date(post.date, theme.date.month); %>
 
         <% if(post_date !== cur_date){ %>
             <h4 class="archive-date"><%- post_date %></h3>
@@ -15,7 +14,7 @@
         <li class="archive-post">
             <a class="archive-post-link" href="<%- url_for(post.path) %>">
                 <span class="archive-post-title"><%= post.title %></span>
-                <span class="archive-post-date"><%- monthNames[post.date.month()] + ' ' + post.date.format('DD') + ', ' + post.date.year() %></span>
+                <span class="archive-post-date"><%= date(post.date, theme.date.day) %></span>
             </a>
         </li>
 
