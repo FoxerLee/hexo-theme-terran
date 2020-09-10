@@ -1,6 +1,35 @@
 <div class="container">
+
   <h2 class="post-title"><%- page.title %></h2>
-  
+  <div class="post-subtitle">
+    <span class="iconfont icon-date1"></span>
+    <span><a href="#"><%= date(page.date, theme.date.day) %></a></span>&nbsp;
+    <span class="iconfont icon-icon-goodscategory"></span>
+    <span>
+      <% if(page.categories.length !== 0){%>
+        <% page.categories.forEach(item => { %>
+            <a href="<%- url_for(item.path) %>"><%- item.name %> </a>
+        <% }) %>
+      <% } %>
+    </span>&nbsp;
+    <span class="iconfont icon-tags"></span>
+    <span>
+      <% if(page.tags.length !== 0){%>
+        <% page.tags.forEach(item => { %>
+            <a href="<%- url_for(item.path) %>"><%- item.name %> </a>&nbsp;
+        <% }) %>
+      <% } %>
+    </span>
+    <% if(theme.post_wordcount.wordcount){ %>
+        <span class="iconfont icon-post"></span>
+        <span><a href=""><%= wordcount(page.content) %> <%= __('words') %></a></span>&nbsp;
+    <% } %>
+    <% if(theme.post_wordcount.min2read){ %>
+        <span class="post-count">
+        <span class="iconfont icon-time"></span>
+        <a href=""><%= min2read(page.content) %> <%= __('min') %></a></span>&nbsp;
+    <% } %>
+  </div>
   <article class="post-content">
       <%- page.content %>
   </article>

@@ -1,2 +1,79 @@
 .post-title
     margin-top 50px
+
+.post-subtitle
+    margin-bottom 2.5rem
+    text-align justify
+    font-size 1em
+    a
+        color #9966ff
+        &:hover
+            color #9be1fa
+            text-decoration none
+            background-color transparent
+            -webkit-transition all .2s
+            -moz-transition all .2s
+            -ms-transition all .2s
+            -o-transition all .2s
+            transition all .2s
+
+.post-content
+    text-align justify
+
+    h1, h2, h3, h4, h5, h6
+        margin-top 1.5rem
+        margin-bottom 0.75rem
+        padding-bottom 0.75rem
+
+    h1, h2, h3
+        border-bottom 1px solid #edf2f7
+
+    h1
+        font-size 2.1em
+        ::before
+            content ""
+            margin-right 5px
+
+    h2
+        font-size 1.7em
+        ::before
+            content "|"
+            margin-right 5px
+
+    h3
+        font-size 1.3em
+        ::before
+            content ">"
+            margin-right 5px
+
+    h4, h5, h6
+        font-size 1em
+
+    a
+        color #9966ff
+        &:hover
+            color #9be1fa
+            text-decoration none
+            background-color transparent
+            -webkit-transition all .2s
+            -moz-transition all .2s
+            -ms-transition all .2s
+            -o-transition all .2s
+            transition all .2s
+
+    code
+        background #f7f7f7
+        color #c7254e
+        padding 1px 4px
+        margin 0 2px
+        border-radius 4px
+        font-size 0.9em
+    img
+        display block
+        max-width 100%
+        height auto
+        margin 0 auto
+        overflow hidden
+
+    img[data-action="zoom"]
+        cursor zoom-in

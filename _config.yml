@@ -62,6 +62,12 @@ date:
   month: MMM, YYYY
   day: MMM DD, YYYY
 
+# Post wordcount display settings
+# Dependencies: https://github.com/willin/hexo-wordcount
+post_wordcount:
+  wordcount: true         # 单篇 字数统计
+  min2read: true          # 单篇 阅读时长
+
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/style.css

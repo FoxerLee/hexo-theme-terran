@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "9202760",
+      "name": "date",
+      "font_class": "date",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "9334508",
+      "name": "time",
+      "font_class": "time",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "11696367",
+      "name": "date",
+      "font_class": "date1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
       "icon_id": "7967771",
       "name": "post",
       "font_class": "post",
