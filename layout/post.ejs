@@ -4,22 +4,22 @@
   <div class="post-subtitle">
     <span class="iconfont icon-date1"></span>
     <span><a href="#"><%= date(page.date, theme.date.day) %></a></span>&nbsp;
+    <% if(page.categories.length !== 0){%>
     <span class="iconfont icon-icon-goodscategory"></span>
-    <span>
-      <% if(page.categories.length !== 0){%>
-        <% page.categories.forEach(item => { %>
-            <a href="<%- url_for(item.path) %>"><%- item.name %> </a>
-        <% }) %>
-      <% } %>
-    </span>&nbsp;
+      <span>
+          <% page.categories.forEach(item => { %>
+              <a href="<%- url_for(item.path) %>"><%- item.name %> </a>
+          <% }) %>
+      </span>&nbsp;
+    <% } %>
+    <% if(page.tags.length !== 0){%>
     <span class="iconfont icon-tags"></span>
-    <span>
-      <% if(page.tags.length !== 0){%>
-        <% page.tags.forEach(item => { %>
-            <a href="<%- url_for(item.path) %>"><%- item.name %> </a>&nbsp;
-        <% }) %>
-      <% } %>
-    </span>
+      <span>
+          <% page.tags.forEach(item => { %>
+              <a href="<%- url_for(item.path) %>"><%- item.name %> </a>&nbsp;
+          <% }) %>
+      </span>
+    <% } %>
     <% if(theme.post_wordcount.wordcount){ %>
         <span class="iconfont icon-post"></span>
         <span><a href=""><%= wordcount(page.content) %> <%= __('words') %></a></span>&nbsp;

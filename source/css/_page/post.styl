@@ -31,7 +31,7 @@
     h1
         font-size 2.1em
         ::before
-            content ""
+            content "|"
             margin-right 5px
 
     h2
@@ -43,11 +43,33 @@
     h3
         font-size 1.3em
         ::before
-            content ">"
+            content "|"
             margin-right 5px
 
-    h4, h5, h6
+    h4
         font-size 1em
+
+    h5
+        font-size 0.9em
+
+    h6
+        font-size 0.8em
+
+    li
+        p
+            margin-bottom 1em
+
+    ol, ul, dl
+        margin-bottom 1em
+
+    blockquote
+        border-left 3px solid #9966ff
+        color #8d99ae
+        background-color rgba(#9966ff, 0.2)
+        margin 1em 0
+        padding 1em
+        p
+            margin-bottom 0
 
     a
         color #9966ff
