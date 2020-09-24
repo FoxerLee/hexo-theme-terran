@@ -56,7 +56,11 @@ friends:
     name: Test
     url: http://www.zjzsliyang.com/
     image: /images/a6.jpg
-friends_length: 3
+  friend-4:
+    name: Test
+    url: http://www.zjzsliyang.com/
+    image: /images/a6.jpg
+friends_length: 4
 
 date:
   month: MMM, YYYY
@@ -81,3 +85,19 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/hexo-theme-terran.js
+
+
+about:
+  avatar: /images/avatar.jpeg
+  name: Foxerlee
+  signature: 致我們短暫相遇，又各奔他處的一生
+  education:
+    1: Master of Computer Science, New York University
+    2: Bachelor of Software Engineering, Tongji University
+  experience:
+    1: Software Develop Intern, Amazon
+    2: Graduate Assistant, New York University
+    3: Research Intern, National Instruments
+    4: Software Intern, Microsoft
+  interest: Machine Learning, Computer Vision, OCR, Segmentation, Few-shot Learning, Cybersecurity, Coding, Reading, Dota2, Fitness
+  github_chart: Foxerlee

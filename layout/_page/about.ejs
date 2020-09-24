@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="about">
+        <% if (theme.about.avatar) { %>
+            <div class="avatar">
+                <img src="<%- theme.about.avatar %>">
+            </div>
+        <% } %>
+        <% if (theme.about.name) { %>
+            <p class="name"> <%- theme.about.name %> </p>
+        <% } %>
+        <% if (theme.about.signature) { %>
+            <p class="signature"> <%- theme.about.signature %> </p>
+        <% } %>
+
+        <div class="logo-group">
+            <% if (theme.links !== undefined) { %>
+                <% for (var key in theme.links){ %>
+                    <% if (key === "linkedin" || key === "facebook") { %>
+                        <a class="iconfont icon-<%- key %>-box-line" href="<%= theme.links[key] %>"></a>
+                    <% } else { %>
+                        <a class="iconfont icon-<%- key %>-line" href="<%= theme.links[key] %>"></a>
+                    <% } %>
+                <% } %>
+            <% } %>
+        </div>
+
+        <% if (theme.about.education.length !== 0) { %>
+            <div class="education">
+                <p class="title"> <%= __('education') %> </p>
+                <% for (var key in theme.about.education) { %>
+                    <p> <%- theme.about.education[key] %> </p>
+                <% } %>
+            </div>
+        <% } %>
+
+        <% if (theme.about.experience.length !== 0) { %>
+            <div class="experience">
+                <p class="title"> <%= __('experience') %> </p>
+                <% for (var key in theme.about.experience) { %>
+                    <p> <%- theme.about.experience[key] %> </p>
+                <% } %>
+            </div>
+        <% } %>
+
+        <% if (theme.about.interest) { %>
+            <div class="interest">
+                <p class="title"> <%= __('interest') %> </p>
+                <p> <%- theme.about.interest %> </p>
+            </div>
+        <% } %>
+
+        <% if (theme.about.github_chart) { %>
+            <div class="gchart">
+                <img src="http://ghchart.rshah.org/<%= theme.about.github_chart %>" alt="<%= theme.about.github_chart %> Github chart" />
+            </div>
+        <% } %>
+
+    </div>
+    <%- page.content %>
+
+
+</div>
