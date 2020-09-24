@@ -1,5 +1,13 @@
 <meta charset="UTF-8">
-<title><%=page.title%></title>
+<% var title = page.title;
+
+if (is_category()){
+    title = 'Category - ' + page.category;
+}
+if (is_tag()){
+    title = 'Tag - '  + page.tag;
+} %>
+<title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
 <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
   <!-- stylesheets list from _config.yml -->
   <% theme.stylesheets.forEach(url => { %>

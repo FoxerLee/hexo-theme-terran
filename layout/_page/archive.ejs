@@ -12,12 +12,29 @@
             <h4 class="archive-date"><%- post_date %></h4>
         <% cur_date = post_date; } %>
 
-        <li class="archive-post">
+        <!-- <li class="archive-post">
             <a class="archive-post-link" href="<%- url_for(post.path) %>">
                 <span class="archive-post-title"><%= post.title %></span>
                 <span class="archive-post-date"><%= date(post.date, theme.date.day) %></span>
             </a>
-        </li>
+        </li> -->
+
+        <div class="archive-post">
+            <h4 class="archive-post-title">
+                <a href="<%-url_for(post.path)%>"><%= post.title %></a>
+            </h4>
+            <p>
+                <% if ( post.excerpt){ %>
+                    <%- post.excerpt %>
+                <% } else { %>
+                    <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 250) %>
+                <% } %>
+            </p>
+            <span class="archive-post-date"><%= date(post.date, theme.date.day) %></span>
+            <a href="<%-url_for(post.path)%>">
+                <span class="archive-more iconfont icon-post"></span>
+            </a>
+        </div>
 
     <% }) %>
     <%- partial('../_partials/paginator') %>

@@ -45,7 +45,7 @@
             -o-transition all .3s
             transition all .3s
     .profile-post
-        margin 60px 100px 60px 100px
+        margin 60px 0 60px 0
         .profile-post-title
             margin 20px 0
         .profile-date
@@ -53,13 +53,25 @@
         .profile-more
             float right
             font-size 20px
-    .profile-more-button
-        margin 10px auto 0 auto
-        display block
-        a
-            color #17141f
+            transition-property transform
+            transition-timing-function ease-out
+            transition-duration 0.3s
             &:hover
-                background-color rgb(249, 248, 252)
+                transform translateX(5px)
+    .profile-more-button
+        margin 0 auto 0 auto
+        display block
+        font-size 1.1em
+        font-weight bold
+        a
+            border none
+            color #17141f
+            transition-property transform
+            transition-timing-function ease-out
+            transition-duration 0.2s
+            &:hover
+                transform scale(1.1, 1.1)
+                background-color #fff
                 color #9966FF
                 -webkit-transition all .2s
                 -moz-transition all .2s

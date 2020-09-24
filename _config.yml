@@ -31,12 +31,12 @@ links:
   zhihu: https://www.zhihu.com/people/foxerlee/activities
   facebook: /#
   twitter: /#
-  weibo: /#
-  reddit: /#
-  stack-overflow: /#
-  gitlab: /#
-  pinterest: /#
-  youtube: /#
+  # weibo: /#
+  # reddit: /#
+  # stack-overflow: /#
+  # gitlab: /#
+  # pinterest: /#
+  # youtube: /#
 
 # Website start year
 start_year: 2017

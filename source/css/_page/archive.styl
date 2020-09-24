@@ -14,30 +14,32 @@
 
 
     .archive-date
-        margin-top 30px
+        margin-top 2em
         text-align center
 
     .archive-post
-        margin 5px 0 5px 0
-        padding 5px 0 5px 0
-        border-bottom 1px dashed lightgray
-
-    .archive-post-link
-        font-size 16px
-        color #17141f
-        &:hover
-            color #9966FF
-            text-decoration none
-            background-color transparent
-            -webkit-transition all .2s
-            -moz-transition all .2s
-            -ms-transition all .2s
-            -o-transition all .2s
-            transition all .2s
-
-    .archive-post-title
-        font-size 15px
-
-    .archive-post-date
-        font-size 15px
-        float right
+        margin 3em 0
+        a
+            color #17141f
+            &:hover
+                color #9966FF
+                background-color transparent
+                text-decoration none
+                cursor pointer
+                -webkit-transition all .3s
+                -moz-transition all .3s
+                -ms-transition all .3s
+                -o-transition all .3s
+                transition all .3s
+        .archive-post-title
+            margin 20px 0
+        .archive-post-date
+            font-size 16px
+        .archive-more
+            float right
+            font-size 20px
+            transition-property transform
+            transition-timing-function ease-out
+            transition-duration 0.3s
+            &:hover
+                transform translateX(5px)
