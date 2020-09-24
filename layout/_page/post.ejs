@@ -33,6 +33,27 @@
     <article class="post-content">
         <%- page.content %>
     </article>
+
+    <% if (theme.copyright) { %>
+        <div class="copyright">
+            <% if (theme.permalink) { %>
+                <p>
+                    <strong><%= __('permalink') %>:</strong> <a href="<%- page.permalink %>"><%- page.permalink %></a>
+                </p>
+            <% } %>
+            <% if (theme.license) { %>
+                <p>
+                    <strong><%= __('license') %>:</strong> <%- theme.license %>
+                </p>
+            <% } %>
+            <% if (theme.signature) { %>
+                <p>
+                    <strong><%= __('signature') %>:</strong> <%- theme.signature %>
+                </p>
+            <% } %>
+        </div>
+    <% } %>
+
     <ul class="pagination">
           <% if (post.prev) { %>
               <li class="page-item prev-link">

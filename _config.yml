@@ -62,6 +62,12 @@ date:
   month: MMM, YYYY
   day: MMM DD, YYYY
 
+copyright: true
+permalink: true
+license: Copyright (c) <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE
+signature: stay hungry, stay foolish
+
+
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
