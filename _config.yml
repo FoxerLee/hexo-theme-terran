@@ -14,8 +14,6 @@ menu:
   Friends: /friends
   About: /about
 
-# Author
-author: Foxerlee
 
 # Profile
 profile_title: Foxerlee's Journal
@@ -44,22 +42,22 @@ start_year: 2017
 # Friends
 ##
 friends:
-  friend-1:
+  1:
     name: Test
     url: http://www.zjzsliyang.com/
-    image: /images/a6.jpg
-  friend-2:
+    image: /images/a1.jpg
+  2:
     name: Test
     url: http://www.zjzsliyang.com/
-    image: /images/a6.jpg
-  friend-3:
+    image: /images/a2.jpg
+  3:
     name: Test
     url: http://www.zjzsliyang.com/
-    image: /images/a6.jpg
-  friend-4:
+    image: /images/a3.jpg
+  4:
     name: Test
     url: http://www.zjzsliyang.com/
-    image: /images/a6.jpg
+    image: /images/a4.jpg
 friends_length: 4
 
 date:
