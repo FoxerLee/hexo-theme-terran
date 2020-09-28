@@ -37,14 +37,18 @@
     <% if (theme.copyright) { %>
         <div class="copyright">
             <% if (theme.permalink) { %>
+                <div style="overflow-x: auto;white-space:nowrap;">
                 <p>
                     <strong><%= __('permalink') %>:</strong> <a href="<%- page.permalink %>"><%- page.permalink %></a>
                 </p>
+                </div>
             <% } %>
             <% if (theme.license) { %>
+                <div style="overflow-x: auto;white-space:nowrap;">
                 <p>
                     <strong><%= __('license') %>:</strong> <%- theme.license %>
                 </p>
+                </div>
             <% } %>
             <% if (theme.signature) { %>
                 <p>
