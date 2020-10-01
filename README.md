@@ -4,27 +4,15 @@
 
 ## Demo
 
-<details>
-<summary><mark>主页</mark></summary>
-  
 ![home](assets/home.png)
-</details>
 
-<details>
-<summary><mark>归档</mark></summary>
-  
-![friends](assets/archive.png)
-</details>
-
-<details>
-<summary><mark>友链</mark></summary>
-  
 ![friends](assets/friends.png)
-</details>
 
 <details>
-<summary><mark>关于</mark></summary>
-  
+<summary><mark>更多</mark></summary>
+
+![friends](assets/archive.png)
+
 ![friends](assets/about.png)
 </details>
 
