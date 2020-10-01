@@ -16,14 +16,14 @@
     </div>
 
     <div class="profile-posts">
-        <% site.posts.map((post, index) => { %>
+        <% site.posts.sort('date', -1).map((post, index) => { %>
             <% if (index < 5) { %>
                 <div class="profile-post">
                     <h4 class="profile-post-title">
                         <a href="<%-url_for(post.path)%>"><%= post.title %></a>
                     </h4>
                     <p>
-                        <% if ( post.excerpt){ %>
+                        <% if (post.excerpt){ %>
                             <%- post.excerpt %>
                         <% } else { %>
                             <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 250) %>

@@ -1,32 +1,55 @@
 # Terran
+[![](https://img.shields.io/badge/author-Foxerlee-blue)](https://github.com/FoxerLee) ![](https://img.shields.io/github/issues/Foxerlee/hexo-theme-terran) ![](https://img.shields.io/github/v/release/foxerlee/hexo-theme-terran) ![](https://img.shields.io/github/release-date/foxerlee/hexo-theme-terran) ![](https://img.shields.io/badge/Hexo-4.0.0%20or%20later-blue) ![](https://img.shields.io/badge/license-MIT-green)
 
 轻量、简洁的 Hexo 主题：Terran（名字源自：星际争霸，虽然和主题一点无关233）
 
 ## Demo
 
-<details>
-<summary><mark>主页</mark></summary>
-  
 ![home](assets/home.png)
-</details>
 
-<details>
-<summary><mark>归档</mark></summary>
-  
-![friends](assets/archive.png)
-</details>
-
-<details>
-<summary><mark>友链</mark></summary>
-  
 ![friends](assets/friends.png)
-</details>
 
 <details>
-<summary><mark>关于</mark></summary>
-  
+<summary><mark>更多</mark></summary>
+
+![friends](assets/archive.png)
+
 ![friends](assets/about.png)
 </details>
+
+## 使用方法
+
+### 安装
+
+1. 下载基本代码
+
+```bash
+git clone https://github.com/FoxerLee/hexo-theme-terran.git themes/terran
+```
+
+2. 安装必要扩展
+
+```bash
+npm i --save hexo-wordcount
+```
+
+### 设置
+
+修改博客本身的 `_config.yml`
+
+```yaml
+# 修改为
+theme: terran
+```
+
+### 更新
+
+```bash
+cd themes/terran
+git pull origin master
+```
+
+本主题支持动态更新而不需重新替换原始主题配置文件。使用方法为：在 `source/_data/` 中创建 `temp.yml` 文件，该文件与主题的 `_config.yml` 文件等效，且优先级更高，也不会在 `git pull` 之后被更新。如果你希望经常更新主题，建议使用该文件。
 
 ## 主题配置
 
@@ -151,5 +174,7 @@ about:
 - Pulse（主题基础框架）: https://bootswatch.com/pulse/
 
 ### 鼓励
+
+![](https://img.shields.io/github/stars/foxerlee/hexo-theme-terran?style=social)
 
 主题宗旨：轻量简洁，开箱即用，如果觉得本主题还不错，欢迎 **[Star](https://github.com/FoxerLee/hexo-theme-terran/stargazers)**，您的支持是我继续更新的动力～
