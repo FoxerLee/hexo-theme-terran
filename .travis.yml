@@ -21,4 +21,5 @@ before_script:
 
 script:
   - cd ../../
-  - hexo g && hexo server
+  - hexo g
+  - timeout 10 hexo server
