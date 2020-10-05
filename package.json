@@ -1,6 +1,32 @@
 {
   "name": "hexo-theme-terran",
-  "version": "0.1.0",
+  "version": "0.8.2",
   "description": "",
-  "private": true
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shenliyang/hexo-theme-snippet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shenliyang/hexo-theme-snippet/issues"
+  },
+  "hexo": {
+    "version": "5.2.0"
+  },
+  "dependencies": {
+    "hexo": "^5.0.0",
+    "hexo-browsersync": "^0.3.0",
+    "hexo-deployer-git": "^2.1.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^3.0.0",
+    "hexo-renderer-stylus": "^2.0.0",
+    "hexo-server": "^2.0.0",
+    "hexo-wordcount": "^6.0.1"
+  }
 }
