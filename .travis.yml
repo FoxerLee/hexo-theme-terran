@@ -15,6 +15,7 @@ before_script:
  - rsync -av ./ ./temp/themes/landscape --exclude ./temp/
  - cd temp
  - npm install
+ - npm i --save hexo-wordcount
  - cd themes/landscape
  - npm install
 
