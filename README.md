@@ -1,13 +1,16 @@
 # Terran
-[![](https://img.shields.io/badge/author-Foxerlee-blue)](https://github.com/FoxerLee) ![](https://img.shields.io/github/issues/Foxerlee/hexo-theme-terran) ![](https://img.shields.io/github/v/release/foxerlee/hexo-theme-terran) ![](https://img.shields.io/github/release-date/foxerlee/hexo-theme-terran) ![](https://img.shields.io/badge/Hexo-4.0.0%20or%20later-blue) ![](https://img.shields.io/badge/license-MIT-green)
+[![](https://img.shields.io/badge/author-Foxerlee-blue)](https://github.com/FoxerLee) ![](https://img.shields.io/github/issues/Foxerlee/hexo-theme-terran) ![](https://img.shields.io/github/v/release/foxerlee/hexo-theme-terran) ![](https://img.shields.io/github/release-date/foxerlee/hexo-theme-terran) ![](https://img.shields.io/badge/Hexo-4.0.0%20or%20later-blue) ![](https://img.shields.io/badge/license-MIT-green) ![](https://travis-ci.org/FoxerLee/hexo-theme-terran.svg?branch=master)
 
 轻量、简洁的 Hexo 主题：Terran（名字源自：星际争霸，虽然和主题一点无关233）
 
-## Demo
+## 主题预览
+
+### 示意图
 
 ![home](assets/home.png)
 
 ![friends](assets/friends.png)
+
 
 <details>
 <summary><mark>更多</mark></summary>
@@ -16,6 +19,25 @@
 
 ![friends](assets/about.png)
 </details>
+
+
+### 预览站点
+
+- Foxerlee's Journal: https://www.foxerlee.top/
+
+## 主题特点
+
+- [x] 文章字数统计，文章阅读时长
+- [x] 文章权限
+- [x] 个性化友链界面
+- [ ] 图片懒加载
+- [ ] 站内搜索
+- [ ] 访客统计
+- [x] 代码高亮
+- [x] 移动端适配 
+- [ ] 评论系统
+
+......
 
 ## 使用方法
 
