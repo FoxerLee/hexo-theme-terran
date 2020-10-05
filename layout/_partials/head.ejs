@@ -17,5 +17,9 @@ if (is_tag()){
 <!-- Google Roboto Mono Font -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<!-- Gitalk -->
+<% if (is_post()) { %>
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<% } %>
 <!-- Mathjax support -->
 <%- partial('_partials/mathjax',{cache: true}) %>

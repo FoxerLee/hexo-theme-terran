@@ -83,7 +83,21 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/hexo-theme-terran.js
+- /js/md5.js
 
+gitalk:
+  enable: true
+  ClientID: # Client ID
+  ClientSecret:  # Client Secret
+  repo:  # repo which stores your blog
+  owner: FoxerLee # Github account name
+  adminUser: ['FoxerLee']
+  ID: location.pathname
+  labels: ['Gitalk'] # GitHub issues' tag
+  perPage: 10 # How many comments in per page
+  pagerDirection: last # first - old to new; last - new to old
+  createIssueManually: false # if need admin user to create issue
+  distractionFreeMode: false # if cmd|ctrl + enter can submit comment
 
 about:
   avatar: /images/avatar.jpeg

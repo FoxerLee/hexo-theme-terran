@@ -70,4 +70,8 @@
               </li>
           <% } %>
       </ul>
+
+    <% if (theme.gitalk.enable) { %>
+        <%- partial('_partials/gitalk') %>
+    <% } %>
   </div>
