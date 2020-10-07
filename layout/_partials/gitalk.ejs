@@ -9,7 +9,7 @@
         repo: '<%= theme.gitalk.repo %>',
         owner: '<%= theme.gitalk.owner %>',
         admin: '<%= theme.gitalk.adminUser %>',
-        id: md5('<%= theme.gitalk.ID %>'),      
+        id: md5(<%= theme.gitalk.ID %>),      
         labels: '<%= theme.gitalk.labels %>'.split(',').filter(l => l),
         perPage: <%= theme.gitalk.perPage %>,
         pagerDirection: '<%= theme.gitalk.pagerDirection %>',
