@@ -22,3 +22,8 @@ before_script:
 script:
   - cd ../../
   - hexo g
+
+
+branches:
+  only:
+    - master

@@ -23,3 +23,7 @@ if (is_tag()){
 <% } %>
 <!-- Mathjax support -->
 <%- partial('_partials/mathjax',{cache: true}) %>
+<!-- website icon -->
+<% if (theme.favicon){ %>
+  <link rel="icon" href="<%- url_for(theme.favicon) %>">
+<% } %>
