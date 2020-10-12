@@ -86,6 +86,7 @@ stylesheets:
 scripts:
 - /js/hexo-theme-terran.js
 - /js/md5.js
+- /js/lazyLoad.js
 
 gitalk:
   enable: true
@@ -115,3 +116,8 @@ about:
     4: Software Intern, Microsoft
   interest: Machine Learning, Computer Vision, OCR, Segmentation, Few-shot Learning, Cybersecurity, Coding, Reading, Dota2, Fitness
   github_chart: Foxerlee
+
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImage: https://cdn.jsdelivr.net/npm/skx@0.0.9/img/lazy.gif
