@@ -14,6 +14,8 @@ menu:
   Friends: /friends
   About: /about
 
+favicon: /images/logo.jpeg
+
 
 # Profile
 profile_title: Foxerlee's Journal
@@ -83,7 +85,22 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/hexo-theme-terran.js
+- /js/md5.js
+- /js/lazyLoad.js
 
+gitalk:
+  enable: true
+  ClientID: # Client ID
+  ClientSecret:  # Client Secret
+  repo:  # repo which stores your blog
+  owner: FoxerLee # Github account name
+  adminUser: ['FoxerLee']
+  ID: location.pathname
+  labels: ['Gitalk'] # GitHub issues' tag
+  perPage: 10 # How many comments in per page
+  pagerDirection: last # first - old to new; last - new to old
+  createIssueManually: false # if need admin user to create issue
+  distractionFreeMode: false # if cmd|ctrl + enter can submit comment
 
 about:
   avatar: /images/avatar.jpeg
@@ -99,3 +116,8 @@ about:
     4: Software Intern, Microsoft
   interest: Machine Learning, Computer Vision, OCR, Segmentation, Few-shot Learning, Cybersecurity, Coding, Reading, Dota2, Fitness
   github_chart: Foxerlee
+
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImage: https://cdn.jsdelivr.net/npm/skx@0.0.9/img/lazy.gif
