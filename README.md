@@ -140,6 +140,22 @@ stylesheets:
 # 需读取的 js 文件
 scripts:
 - /js/hexo-theme-terran.js
+- /js/md5.js
+- /js/lazyLoad.js
+
+gitalk:
+  enable: true
+  ClientID: # Client ID
+  ClientSecret:  # Client Secret
+  repo:  # repo which stores your blog
+  owner: FoxerLee # Github account name
+  adminUser: ['FoxerLee']
+  ID: location.pathname
+  labels: ['Gitalk'] # GitHub issues' tag
+  perPage: 10 # How many comments in per page
+  pagerDirection: last # first - old to new; last - new to old
+  createIssueManually: false # if need admin user to create issue
+  distractionFreeMode: false # if cmd|ctrl + enter can submit comment
 
 # 关于界面设置
 ## 不需要的可以注释
@@ -158,6 +174,11 @@ about:
     4: Software Intern, Microsoft
   interest: Machine Learning, Computer Vision, OCR, Segmentation, Few-shot Learning, Cybersecurity, Coding, Reading, Dota2, Fitness
   github_chart: Foxerlee
+  
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImage: https://cdn.jsdelivr.net/npm/skx@0.0.9/img/lazy.gif
 ```
 
 ## 其他
