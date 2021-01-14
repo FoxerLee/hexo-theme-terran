@@ -27,3 +27,8 @@ if (is_tag()){
 <% if (theme.favicon){ %>
   <link rel="icon" href="<%- url_for(theme.favicon) %>">
 <% } %>
+
+<!-- Google AdSense-->
+<% if (theme.googleads) { %>
+  <script data-ad-client="<%- theme.googleads %>" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<% } %>

@@ -3,8 +3,8 @@
         <span>
             <%= config.author %> © <% if (theme.start_year && theme.start_year < date(new Date(), "YYYY")) { %>
                 <%- theme.start_year %> - <%}%>
-                <%- date(new Date(), "YYYY") %> 
-        </span>
+                <%- date(new Date(), "YYYY") %>  
+        </span> |  <% if (theme.visit_counter) { %> <%- partial("../_plugins/site-visitor") %> <% } %>
     </div>
     <div>
         <span>

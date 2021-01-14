@@ -70,7 +70,20 @@
               </li>
           <% } %>
       </ul>
-
+    
+    <% if (theme.googleads) { %>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- hor -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-3129494579607503"
+            data-ad-slot="2940693228"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    <% } %>
     <% if (theme.gitalk.enable) { %>
         <%- partial('_partials/gitalk') %>
     <% } %>

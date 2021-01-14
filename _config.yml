@@ -71,6 +71,10 @@ permalink: true
 license: Copyright (c) <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE
 signature: stay hungry, stay foolish
 
+visit_counter:
+  site_uv: true
+  site_pv: true
+
 
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
@@ -121,3 +125,5 @@ lazyload:
   enable: true
   onlypost: false
   loadingImage: https://cdn.jsdelivr.net/npm/skx@0.0.9/img/lazy.gif
+
+googleads: ca-pub-3129494579607503
