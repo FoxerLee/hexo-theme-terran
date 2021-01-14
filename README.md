@@ -3,6 +3,8 @@
 
 轻量、简洁的 Hexo 主题：Terran（名字源自：星际争霸，虽然和主题一点无关233）
 
+[🇨🇳Chinese](README.md), [🇬🇧English](README-en.md)🇳
+
 ## 主题预览
 
 ### 示意图

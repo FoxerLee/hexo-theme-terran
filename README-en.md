@@ -137,14 +137,14 @@ date:
   month: MMM, YYYY
   day: MMM DD, YYYY
 
-# 文章底部内容
-## 是否开启
+# Copyright of each post
+##
 copyright: true
-## 是否添加本文网址
+## Add current post's url
 permalink: true
-## 许可
+## License
 license: Copyright (c) <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE
-## 签名
+## Signature
 signature: stay hungry, stay foolish
 
 
