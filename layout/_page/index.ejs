@@ -17,23 +17,25 @@
 
     <div class="profile-posts">
         <% site.posts.sort('date', -1).map((post, index) => { %>
-            <% if (index < 5) { %>
-                <div class="profile-post">
-                    <h4 class="profile-post-title">
-                        <a href="<%-url_for(post.path)%>"><%= post.title %></a>
-                    </h4>
-                    <p>
-                        <% if (post.excerpt){ %>
-                            <%- post.excerpt %>
-                        <% } else { %>
-                            <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 250) %>
-                        <% } %>
-                    </p>
-                    <span class="profile-date"><%= date(post.date, theme.date.day) %></span>
-                    <a href="<%-url_for(post.path)%>">
-                        <span class="profile-more iconfont icon-post"></span>
-                    </a>
-                </div>
+            <% if (!post.album || post.album === false){ %>
+                <% if (index < 5) { %>
+                    <div class="profile-post">
+                        <h4 class="profile-post-title">
+                            <a href="<%-url_for(post.path)%>"><%= post.title %></a>
+                        </h4>
+                        <p>
+                            <% if (post.excerpt){ %>
+                                <%- post.excerpt %>
+                            <% } else { %>
+                                <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 250) %>
+                            <% } %>
+                        </p>
+                        <span class="profile-date"><%= date(post.date, theme.date.day) %></span>
+                        <a href="<%-url_for(post.path)%>">
+                            <span class="profile-more iconfont icon-post"></span>
+                        </a>
+                    </div>
+                <% } %>
             <% } %>
         <% }) %>
         <% if (site.posts.length >= 5) { %>
