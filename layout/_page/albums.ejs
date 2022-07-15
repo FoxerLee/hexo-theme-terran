@@ -1,0 +1,19 @@
+<div class="container-fluid nav-bar-container m-md-3 px-md-5">
+    <div class="row">
+        <% site.posts.each(function (post) { %>
+            <% if (post.album && post.album === true){ %>
+                <div class="col-md-6 col-10 mb-4">
+                    <div class="hovereffect">
+                        <a href="<%-url_for(post.path)%>">
+                            <img class="img-fluid portfolio-img" src="<%= post.image_link %>" alt="<%- post.title || "Untitled" %>">
+                                <div class="overlay">
+                                    <span class="overlay-text"><%- post.title || "Untitled" %></span>
+                                </div>
+                        </a>
+                    </div>
+                </div>
+            <% } %>
+        <% }) %>
+    </div>
+    <!-- <%- partial('../_partials/paginator') %> -->
+</div>

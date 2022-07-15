@@ -190,8 +190,8 @@ samp {
 }
 
 pre {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: -1em;
+  margin-bottom: 0;
   overflow: auto;
   -ms-overflow-style: scrollbar;
 }
